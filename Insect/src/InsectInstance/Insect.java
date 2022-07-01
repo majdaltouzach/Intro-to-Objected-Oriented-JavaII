@@ -13,6 +13,7 @@ public class Insect {
 		weight = initWeight;
 		x = initX;
 		y = initY;
+		population++;
 	}
 	
 	//methods
@@ -46,6 +47,7 @@ public class Insect {
 		
 		bug1.move(1, 10);
 		bug2.move(-300, 400);
+		
 	}
 }
 
