@@ -6,6 +6,8 @@ public class Insect {
 	private int y;
 	
 	//static constants/variables
+	public static final int DEFAULT_X = 0;
+	public static final int DEFAULT_Y = 0;
 	public static final double DIST_WEIGHT_LOSS_FACTOR = .0001;
 	private static int population = 0;
 	private static final String[] FACTS = {
@@ -14,6 +16,13 @@ public class Insect {
 			"Insects are cold-blooded",
 			"Spiders are not considered insects"
 	};
+
+	public Insect(double initWeight){
+		weight = initWeight;
+		x = DEFAULT_X;
+		y = DEFAULT_Y;
+		population++;
+	}
 	
 	public Insect(double initWeight, int initX, int initY) {
 		weight = initWeight;
@@ -21,13 +30,48 @@ public class Insect {
 		y = initY;
 		population++;
 	}
+
+	// getter and setter methods
+	public double getWeight(){
+		return weight;
+	}
+
+	public int getX(){
+		return x;
+	}
+
+	public void setX(int newX){
+		if(isLegalX(newX)){
+			x = newX;
+		}
+	}
+
+	public int getY(){
+		return y;
+	}
+
+	public void setY(int newY){
+		if(isLegalY(newY)){
+			y = newY;
+		}
+	}
+	// end of getter and setter methods
 	
 	//methods
 	public void eat(double amount) {
 		System.out.println("Nibble Nibble ... yum yum");
 		weight += amount;
 	}
-	
+
+
+
+	// isLegal Methods
+	public static boolean isLegalX(int newX){
+		return (newX >=0 ? true : false);
+	}
+	public static boolean isLegalY(int newY){
+		return (newY >=0 ? true : false);
+	}
 	public void move(int newX, int newY) {
 		double distance = calculateDistance(x, y, newX, newY);
 		if (distance > 0) {
