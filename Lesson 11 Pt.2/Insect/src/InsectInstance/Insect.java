@@ -95,6 +95,11 @@ public class Insect {
 		int index = (int)(Math.random() * ((FACTS.length - 1) + 1));
 		return FACTS[index];
 	}
+
+	public String toString(){
+		return "weight: " + weight + ", x: " + x + ", y: "
+				+ y;
+	}
 	//test method
 	public static void main(String[] args) {
 //		Insect buzz1 = new Insect();

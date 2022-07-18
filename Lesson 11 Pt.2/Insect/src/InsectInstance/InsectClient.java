@@ -11,10 +11,10 @@ public class InsectClient {
 		System.out.println(bug1.getX());
 
 		Insect bug2 = new Insect(31);
-		System.out.println(bug2.getWeight());
-		//System.out.println(bug2.getWeight());
-		System.out.println(bug2.getX());
-		System.out.println(bug2.getY());
+//		System.out.println(bug2.getWeight());
+//		System.out.println(bug2.getX());
+//		System.out.println(bug2.getY());
+		System.out.println(bug2.toString());
 		System.out.println(bug2.getPopulation());
 	}
 }
