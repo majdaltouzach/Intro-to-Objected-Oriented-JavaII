@@ -1,15 +1,15 @@
 package Craps;
 
 public class Craps {
-    private Die die1, die2;
-    private int point;
+    private static Die die1, die2;
+    private static int point;
 
     public Craps(){
         die1 = new Die();
         die2 = new Die();
     }
 
-    private int toss(){
+    private static int toss(){
         int total = die1.roll() + die2.roll();
         System.out.println("Die One: " + die1.getFaceValue()
         + ", Die Two: " + die2.getFaceValue());
@@ -17,7 +17,7 @@ public class Craps {
         return total;
     }
 
-    private void go(){
+    public void go(){
         point = toss();
         System.out.println("Point: " + point);
 
@@ -50,9 +50,5 @@ public class Craps {
         }
     }
 
-    public static void main(String[] args) {
-        Craps game = new Craps();
 
-        game.go();
-    }
 }

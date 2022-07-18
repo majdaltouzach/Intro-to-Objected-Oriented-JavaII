@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81cc44d8-4bc3-45a3-ab93-282cb02138c6" name="Changes" comment="Added toString, roll, and getFaceValue methods">
-      <change afterPath="$PROJECT_DIR$/src/Craps/Craps.java" afterDir="false" />
+    <list default="true" id="81cc44d8-4bc3-45a3-ab93-282cb02138c6" name="Changes" comment="Wrote Craps Game">
+      <change afterPath="$PROJECT_DIR$/src/Craps/CrapsLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dice Craps Game/Craps/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dice Craps Game/Craps/Die.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Craps/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Craps/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Craps/Craps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Craps/Craps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +40,8 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Craps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Craps.Craps" />
+    <configuration name="CrapsLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Craps.CrapsLauncher" />
       <module name="Dice Craps Game" />
       <extension name="coverage">
         <pattern>
@@ -56,7 +55,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Craps" />
+        <item itemvalue="Application.CrapsLauncher" />
       </list>
     </recent_temporary>
   </component>
@@ -68,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658163299420</updated>
-      <workItem from="1658163300959" duration="4012000" />
+      <workItem from="1658163300959" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="Created Craps Project with Die.java class.">
       <created>1658163361584</created>
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658163847507</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Wrote Craps Game">
+      <created>1658167335870</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658167335870</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Craps Project with Die.java class." />
     <MESSAGE value="Added toString, roll, and getFaceValue methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added toString, roll, and getFaceValue methods" />
+    <MESSAGE value="Wrote Craps Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote Craps Game" />
   </component>
 </project>
