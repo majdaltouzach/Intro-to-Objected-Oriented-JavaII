@@ -17,14 +17,12 @@ public class Insect {
 			"Spiders are not considered insects"
 	};
 
-	public Insect(double initWeight){
-		weight = initWeight;
-		x = DEFAULT_X;
-		y = DEFAULT_Y;
-		population++;
+	public Insect(double initWeight) {
+		this(initWeight , DEFAULT_X, DEFAULT_Y);
 	}
 	
 	public Insect(double initWeight, int initX, int initY) {
+	//	this(initWeight);
 		weight = initWeight;
 		x = initX;
 		y = initY;
@@ -54,6 +52,10 @@ public class Insect {
 		if(isLegalY(newY)){
 			y = newY;
 		}
+	}
+
+	public int getPopulation(){
+		return population;
 	}
 	// end of getter and setter methods
 	
