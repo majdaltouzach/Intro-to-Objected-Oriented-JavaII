@@ -21,11 +21,11 @@ public class Insect {
 		this(initWeight , DEFAULT_X, DEFAULT_Y);
 	}
 	
-	public Insect(double initWeight, int initX, int initY) {
+	public Insect(double weight, int x, int y) {
 	//	this(initWeight);
-		weight = initWeight;
-		x = initX;
-		y = initY;
+		weight = this.weight;
+		x = this.x;
+		y = this.y;
 		population++;
 	}
 
@@ -38,9 +38,9 @@ public class Insect {
 		return x;
 	}
 
-	public void setX(int newX){
-		if(isLegalX(newX)){
-			x = newX;
+	public void setX(int x){
+		if(isLegalX(x)){
+			this.x = x;
 		}
 	}
 
@@ -48,9 +48,9 @@ public class Insect {
 		return y;
 	}
 
-	public void setY(int newY){
-		if(isLegalY(newY)){
-			y = newY;
+	public void setY(int y){
+		if(isLegalY(y)){
+			y = this.y;
 		}
 	}
 
